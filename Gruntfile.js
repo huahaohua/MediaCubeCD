@@ -1,6 +1,10 @@
 /*global module:false*/
-'use strict';
-module.exports = function (grunt) {
+"use strict";
+/**
+ * created by zheng.lu in 2017.2.27
+ * modified by zheng.lu in 2017.3.22
+ */
+module.exports = function(grunt) {
 
     // Project configuration.
     grunt.initConfig({
@@ -8,11 +12,10 @@ module.exports = function (grunt) {
         pkg: grunt.file.readJSON('package.json'),
         // console.log(pkg),
         banner: '/*! <%= pkg.title || pkg.name %> - v<%= pkg.version %> - ' +
-        '<%= grunt.template.today("yyyy-mm-dd") %>\n' +
-        '<%= pkg.homepage ? "* " + pkg.homepage + "\\n" : "" %>' +
-        '* Copyright (c) <%= grunt.template.today("yyyy") %> <%= pkg.author.name %>;' +
-        ' Licensed <%= _.pluck(pkg.licenses, "type").join(", ") %> */\n',
-        // cwd:'app',
+            '<%= grunt.template.today("yyyy-mm-dd") %>\n' +
+            '<%= pkg.homepage ? "* " + pkg.homepage + "\\n" : "" %>' +
+            '* Copyright (c) <%= grunt.template.today("yyyy") %> <%= pkg.author.name %>;' +
+            ' Licensed <%= _.pluck(pkg.licenses, "type").join(", ") %> */\n',
         jsfiles: [
             'app/app.js',
             'app/main.js',
@@ -24,16 +27,6 @@ module.exports = function (grunt) {
             '!app/components/service/editPicture/trsCutPicture/cropper/js/*.js',
             'app/editingCenter/**/*.js',
             '!app/editingCenter/newspager/service/**/*.js',
-            '!app/editingCenter/website/fragmentManagement/visualEditing/js/*.js'
-            // 'app/manageConfig/**/*.js',//2017/3/21-delete
-            // 'app/operateCenter/**/*.js',
-            //  'app/resourceCenter/**/*.js',//2017/3/21-delete
-            // 'app/visualizationCenter/**/*.js',
-            //  'app/myZone/**/*.js', //2017/3/21-delete
-            //  'app/planningCenter/**/*.js',//2017/3/21-delete
-            //  '!app/planningCenter/cueSelectedTopic/hotHeadLine/template/hotInfoVisual/**/*.js',//2017/3/21-delete
-            //  "!app/planningCenter/selectedTopicEvent/eventAnalysis/detail/eventTracks/wordCloud/*.js",//2017/3/21-delete
-            //  "!app/planningCenter/selectedTopicEvent/eventAnalysis/detail/eventTracks/wordCloud/echarts2/*.js",//2017/3/21-delete
         ],
         jsfiles2: [
 
@@ -53,12 +46,8 @@ module.exports = function (grunt) {
             'app/components/filter/trslimitTo/*.js',
             'app/components/util/trsDropDownList/*.js',
             'app/editingCenter/service/initSelectedService/trsSingleSelectionService.js',
-            'app/editingCenter/website/fragmentManagement/**/**/*.js',
             'app/components/service/spliceString/*.js',
             'app/login/*.js',
-            '!app/editingCenter/website/fragmentManagement/widgetMgr/**/**/**/*.js',
-            '!app/editingCenter/website/fragmentManagement/fragmentManagement.js',
-            '!app/editingCenter/website/fragmentManagement/visualEditing/js/layer.js',
             '!app/components/util/ueditor/dialogs/material/internal.js'
         ],
         cssfiles: [
@@ -66,16 +55,8 @@ module.exports = function (grunt) {
             'app/login/*.css',
             'app/components/**/*.css',
             'app/editingCenter/**/*.css',
-            // 'app/resourceCenter/**/*.css',
-            // 'app/planningCenter/**/*.css',
-            // 'app/manageConfig/**/*.css',
-            // 'app/manageConfig/**/**/*.css',
-            //  'app/planningCenter/**/*.css',//2017/3/21-delete
-            // 'app/visualizationCenter/**/*.css',
             'app/login/**/*.css',
-            // 'app/myZone/**/*.css',
             '!app/components/util/ueditor/dialogs/**/*.css',
-            // '!app/planningCenter/cueSelectedTopic/hotHeadLine/template/hotInfoVisual/**/*.css',
             '!app/editingCenter/website/fragmentManagement/visualEditing/css/*.css',
             '!app/editingCenter/website/fragmentManagement/visualEditing/**/**/*.css',
             '!app/components/util/ueditor/service/css/ueditorBuiltInStyles.css',
@@ -84,23 +65,11 @@ module.exports = function (grunt) {
         otherFiles: [
             'lib/**/*',
             'components/**/*',
-            // '!components/**/*.css',
-            // '!components/**/*.less',
-            // '!components/**/*.js',
             'i18n/**/*',
             'login/**/*',
             '!login/**/*.css',
             '!login/**/*.less',
             '!login/**/*.js',
-            //  'myZone/**/*',//2017/3/21-delete
-            // '!myZone/**/*.css',
-            //  '!myZone/**/*.js',//2017/3/21-delete
-            // 'visualEditTemp/**/*',
-            // '!visualEditTemp/**/*.css',
-            // '!visualEditTemp/**/*.js',
-            // 'visualizationCenter/**/*',
-            // '!visualizationCenter/**/*.css',
-            // '!visualizationCenter/**/*.js',
             'main.js'
         ],
         // Task configuration.
@@ -227,19 +196,6 @@ module.exports = function (grunt) {
                 src: '<%= concat.css.dest %>',
                 dest: 'dist/<%= pkg.name %>.min.css'
             }
-            // dist: {
-            //     files: [{
-            //         expand: true,
-            //         cwd: 'app',
-            //         flatten: false,
-            //         filter: 'isFile',
-            //         src: [
-            //             '**/*.css',
-            //             '!lib/**/*.css'
-            //         ],
-            //         dest: 'dist/'
-            //     }]
-            // }
         },
         qunit: {
             files: ['test/**/*.html']
@@ -278,63 +234,6 @@ module.exports = function (grunt) {
                     dest: 'dist'
                 }]
             },
-            //  manage: { //2017/3/21-delete
-            //      files: [{
-            //          expand: true,
-            //          cwd: 'app',
-            //          flatten: false,
-            //          src: [
-            //              'manageConfig/**/*',
-            //              '!manageConfig/**/*.js',
-            //              '!manageConfig/**/*.css',
-            //              '!manageConfig/**/*.less',
-            //          ],
-            //          dest: 'dist'
-            //      }]
-            //  },
-            // operate: {
-            //     files: [{
-            //         expand: true,
-            //         cwd: 'app',
-            //         flatten: false,
-            //         src: [
-            //             'operateCenter/**/*',
-            //             '!operateCenter/**/*.js',
-            //             '!operateCenter/**/*.css',
-            //             '!operateCenter/**/*.less',
-            //         ],
-            //         dest: 'dist'
-            //     }]
-            // },
-            //  plan: {
-            //      files: [{
-            //          expand: true,
-            //          cwd: 'app',
-            //          flatten: false,
-            //          src: [
-            //              'planningCenter/**/*',
-            //              '!planningCenter/**/*.js',
-            //              '!planningCenter/**/*.css',
-            //              '!planningCenter/**/*.less',
-            //              'planningCenter/cueSelectedTopic/hotHeadLine/**/*'
-            //          ],
-            //          dest: 'dist'
-            //      }]
-            //  },
-            //  resource: {  //2017/3/21-delete
-            //      files: [{
-            //          expand: true,
-            //          cwd: 'app',
-            //          flatten: false,
-            //          src: [
-            //              'resourceCenter/**/*',
-            //              '!resourceCenter/**/*.js',
-            //              '!resourceCenter/**/*.css',
-            //              '!resourceCenter/**/*.less',
-            //          ],
-            //          dest: 'dist'
-            //      }]
-            //  },
             other: {
                 files: [{
                     expand: true,
@@ -448,10 +347,8 @@ module.exports = function (grunt) {
 
     // Default task.
     grunt.registerTask('default', [ /*'jshint:app',*/ 'copy',
-        'html2js', 'bower', 'less', 'concat', 'replace', 'uglify', 'cssmin', 'connect'/*, 'watch'*/
+        'html2js', 'bower', 'less', 'concat', 'replace', 'uglify', 'cssmin' /*, 'connect'*/ /*, 'watch'*/
     ]);
+    // less to css
     grunt.registerTask('lessTask', ['less', 'concat:css']);
-    // grunt.registerTask('serve', ['connect:serve', 'watch']);
-    // grunt.registerTask('watchTask', ['watch']);
-    // grunt.registerTask('watchTask', ['watch:appless', 'watch:livereload']);
 };

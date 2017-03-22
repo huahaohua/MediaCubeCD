@@ -72,7 +72,7 @@
         <!-- 按稿件时间排序 -->
         <trs-time-select selected-option="data.selectedTimeType" options="data.timeTypeName" callback="queryByDropdown('DocRelTime', data.selectedTimeType.value)"></trs-time-select>
     </div>
-    <div class="col-md-6 text-align-right">
+    <!--<div class="col-md-6 text-align-right">
         <div class="input-group edit_input_group mr15">
             <input type="text" class="form-control edit_form_control" placeholder="请输入关键字搜索" ng-model="keywords" ng-keypress="fullTextSearch($event)">
             <span class="input-group-btn">
@@ -80,7 +80,8 @@
             </span>
         </div>
         <trs-single-select selected-option="data.websiteAllSelected" callback="queryByWebsiteAll()" options="data.websiteAll" class="pull-right"></trs-single-select>
-    </div>
+    </div>-->
+    <search-component></search-component>
 </div>
 <!-- 列表 -->
 <div class="editing-table">

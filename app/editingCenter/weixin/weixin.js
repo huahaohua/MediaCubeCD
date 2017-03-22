@@ -1,19 +1,7 @@
 "use strict";
-angular.module('editingCenterWeiXinModule', [
-	'weixinLeftModule',
-	'weixinRouterModule',
-	'weixinPendingModule',
-	'weixinSignedModule',
-	'weixinTobeCompiledModule',
-	'weixinTobeCompiledTwoModule',
-	'weixinPreviewModule',
-	'weiXinRecycleModule',
-	"initWeiXinDataModule",
-    "WeiXininitModule",
-    'initWechatNewsModule',
-    'wechatBtnServiceModule',
-    'editingCenterWechatServiceModule'
-]).
-controller('WeiXinCtrl', ['$scope', function($scope) {
-
-}]);
+/**
+ * created by zheng.lu in 2017.3.22
+ */
+angular.module('editingCenterWeixinModule', [
+    'editingCenterWeixinRouterModule'
+]).controller('EditingCenterWeixinController', [function() {}]);

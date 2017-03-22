@@ -33,5 +33,6 @@ angular.module('components.directive', [
     'util.trsScrollPicturesModule',
     'util.trsWeChatEditorModule',
     'editingCenter.imgUploadChgWeibo',
-    'trsThumbScrollModule'//新增缩略图滚动
+    'trsThumbScrollModule',//新增缩略图滚动
+    'searchModule'//add  检索
 ]);

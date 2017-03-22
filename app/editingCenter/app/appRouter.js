@@ -1,31 +1,17 @@
-'use strict';
+"use strict";
+/**
+ * created by zheng.lu in 2017.3.22
+ */
 angular.module('editingCenterAppRouterModule', [])
-    .
-config(['$stateProvider', '$urlRouterProvider', function($stateProvider,
-    $urlRouterProvider) {
-    // $stateProvider.state('editctr.app', {
-    //     url: '/app?siteid',
-    //     views: {
-    //         'main@editctr': {
-    //             templateUrl: './editingCenter/main_tpl.html',
-    //         },
-    //         'left@editctr.app': {
-    //             templateUrl: './editingCenter/app/left_tpl.html',
-    //             controller: 'appLeftCtrl'
-    //         },
-    //         'footer@editctr.app': {
-    //             templateUrl: './footer_tpl.html'
-    //         }
-    //     }
-    // });
-    $stateProvider.state('editctr.app', {
-        url: '/app?siteid',
-        views: {
-                'app@editctr': {
+    .config(["$stateProvider", function($stateProvider) {
+        $stateProvider.state('editctr.app', {
+            url: '/app',
+            views: {
+                /*'app@editctr': {
                     templateUrl: './editingCenter/app/left_tpl.html',
                     controller: 'appLeftCtrl'
-                }
-            
-        }
-    });
-}]);
+                }*/
+
+            }
+        });
+    }]);

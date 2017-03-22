@@ -3,17 +3,10 @@
  * created by zheng.lu in 2017.3.14
  */
 angular.module('websitetoBeCompiledModule', [
-    'websitetoBeCompiledRouterModule',
-    /*'editingCenterCompiledWebsiteTimingSignModule',
-    'editingCenterCompiledWebsiteRecycleModule',
-    "websiteAtlasModule",
-    'websiteLinkDocModule',
-    'websiteSubjectModule',
-    'initWebsiteDataModule',
-    'editingCenterWebsiteOwnerModule',*/
+    'websitetoBeCompiledRouterModule'
 ]).
-controller('websitetoBeCompiledCtrl', ["$scope", "$filter", "$q", '$state', "$timeout", "$stateParams", "$window", "localStorageService", "trsHttpService", "initSingleSelecet", "trsconfirm", "trsspliceString", "editingCenterService", "websiteService", "initVersionService", "initeditctrBtnsService", "storageListenerService", 'editcenterRightsService', 'globleParamsSet', 'editIsLock', 'trsPrintService',
-    function toBeCompiled($scope, $filter, $q, $state, $timeout, $stateParams, $window, localStorageService, trsHttpService, initSingleSelecet, trsconfirm, trsspliceString, editingCenterService, websiteService, initVersionService, initeditctrBtnsService, storageListenerService, editcenterRightsService, globleParamsSet, editIsLock, trsPrintService) {
+controller('websitetoBeCompiledCtrl', ["$scope", "$stateParams", "trsHttpService", "initSingleSelecet", "editingCenterService", "globleParamsSet",
+    function toBeCompiled($scope, $stateParams, trsHttpService, initSingleSelecet, editingCenterService, globleParamsSet) {
         initStatus();
         initData();
 

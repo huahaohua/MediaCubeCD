@@ -1,34 +1,26 @@
-'use strict';
+"use strict";
+/**
+ * created by zheng.lu in 2017.2.27
+ */
 angular.module('editingCenterModule', [
-    'editingCenterRouterModule',
-    'editingCenterLeftModule',
-    // 'editingCenterNaviModule',
-    'editingCenterAppModule',
-    'editingCenterWeiXinModule',
     'trsNavLocationModule',
-    'trsEditorModule',
-    'trsEditorAuthMoule',
-    'trsUserSupportModule',
     'ngTagsInput',
     'mgcrea.ngStrap.typeahead',
     'mgcrea.ngStrap.popover',
-    // 'editingCenterIWoModule',//2017/3/21-delete
-    // 'editingCenterNewspaperModule',
-    'newspaperStandbyDraftModule',
-    'editingCenterWebsiteModule',
-    'initSingleSelectionModule',
-    'editingCenterServiceModule',
-    'editctrInitBtnModule',
-    "editctrFilterBtnModule",
-    "editLeftRouterModule",
-    "editctrSupportCreationModule",
-    "editcenterRightsModule",
-    "editIsLockModule",
-    "editingCenterWeiBoModule",
+
+    'editingCenterRouterModule',     // 采编中心总路由
+    'editingCenterLeftModule',       // 采编中心左侧
+
+    'editingCenterWebsiteModule',    // 采编中心-网址
+    'editingCenterAppModule',        // 采编中心-app
+    'editingCenterWeixinModule',     // 采编中心-微信
+    'editingCenterWeiboModule',      // 采编中心-微博
+    'initSingleSelectionModule',     // 采编中心-公共服务-下拉
+    'editingCenterServiceModule'     // 采编中心-公共服务
 ]).
 controller('EditingCenterController', ['$scope', '$state', '$location',
     function($scope, $state, $location) {
-        
+
     }
 ]).value('editingMediatype', {
     // 网站：1，APP：2，微信：3，微博：4

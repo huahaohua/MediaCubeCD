@@ -1,15 +1,7 @@
 "use strict";
+/**
+ * created by zheng.lu in 2017.3.22
+ */
 angular.module('editingCenterAppModule', [
-	'editingCenterAppLeftModule',
-    'editingCenterAppRouterModule',
-    'editingCenterCompiledModule',
-    'editingCenterPendingModule',
-    'editingCenterSignedModule',
-    'util.trsTimeline',
-    'versionModule',
-    'editingCenterObjTimeModule',
-    'editingCenterAppServiceModule',
-    'initAddMetaDataModule',
-    'appPreviewRouterModule',
-])
-  .controller('EditingCenterAppController', [function () {}]);
+    'editingCenterAppRouterModule'
+]).controller('EditingCenterAppController', [function() {}]);
