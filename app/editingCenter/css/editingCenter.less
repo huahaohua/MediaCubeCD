@@ -175,6 +175,10 @@ body {
             // text-align: center;
             color: #fff;
             background-color: #2178c5;
+            border-bottom: 1px solid #064c84;
+            &:last-child {
+                border-bottom: none;
+            }
             span {
                 display: inline-block;
                 padding-left: 50px;
@@ -286,11 +290,11 @@ body {
 /* accordion中的panel end */
 
 /* 常用栏目 样式 */
-.edit-column .panel-heading .panel-title {
+.editing-column .panel-heading .panel-title {
     padding-left: 0;
 }
 
-.edit-column {
+.editing-column {
     position: relative;
     border-bottom: 1px solid #2a6ea4!important;
     -webkit-box-shadow: 0 1px 1px #064679;
@@ -307,13 +311,13 @@ body {
         font-size: 14px;
         line-height: 40px;
     }
-    span.edit-column-title {
+    span.editing-column-title {
         display: block;
         width: 100%;
         padding-left: 42px;
         background: #015293 url("./editingCenter/images/blue-skin/editing-leftnav_icon04.png") no-repeat 18px center;
     }
-    .edit-column-mark {
+    .editing-column-mark {
         position: absolute;
         top: 14px;
         right: 14px;
@@ -332,7 +336,7 @@ body {
             line-height: 40px!important;
             padding-left: 44px;
             // color: #fff;
-            background-color: #015293;
+            background-color: #1580a3;
             border-bottom: 1px solid #2a6ea4;
             -webkit-box-shadow: 0 1px 1px #064679;
             -moz-box-shadow: 0 1px 1px #064679;
@@ -345,7 +349,7 @@ body {
                 box-shadow: none;
             }
             &:hover {
-                background-color: rgba(1, 82, 147, 0.89);
+                // background-color: rgba(1, 82, 147, 0.89);
                 // border-radius: 0;
                 a {
                     text-decoration: none;
@@ -366,7 +370,7 @@ body {
             }
         }
     }
-    .edit-remove-icon {
+    .editing-remove-icon {
         position: absolute;
         top: 0;
         right: 14px;
@@ -381,12 +385,14 @@ body {
 .editing-subscribe {
     position: relative;
     border-top: 1px solid #afc6dc;
+    border-bottom: 1px solid #4b85c1;
     .editing-subscribe-list {
         height: 40px;
         line-height: 40px;
         font-weight: 800;
         color: #fff;
         background-color: #3379c1;
+        border-bottom: 1px solid #2769ad;
         cursor: pointer;
         .subscribe-icon {
             display: inline-block;
@@ -416,13 +422,13 @@ body {
     position: relative;
     .panel {
         line-height: 40px;
-        background-color: #3379c1;
+        background-color: #296eb5;
     }
     .panel-heading {
         height: 40px;
         line-height: 40px;
         color: #fff;
-        background-color: #3379c1;
+        background-color: #296eb5;
     }
     .panel-title {
         font-size: 14px;
@@ -433,7 +439,7 @@ body {
         // width: 100%;
         padding-left: 46px;
         // font-size: 16px;
-        background: #3379c1 url("editingCenter/images/blue-skin/editing-leftnav_icon01.png") no-repeat 17px center;
+        background: #296eb5 url("editingCenter/images/blue-skin/editing-leftnav_icon01.png") no-repeat 17px center;
     }
     .subscribe-column-mark {
         position: absolute;
@@ -443,7 +449,7 @@ body {
     }
     ul {
         height: auto;
-        background-color: #3379c1;
+        background-color: #296eb5;
         li {
             position: relative;
             border-top: 1px solid #4b85c1;
@@ -938,6 +944,14 @@ table tbody tr td a:active {
 /* 分页 page&pagination end */
 
 /* 网站待编右侧列表  end */
+
+/* 页脚footer */
+.editing-footer {
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+}
+/* 页脚footer end */
 
 
 

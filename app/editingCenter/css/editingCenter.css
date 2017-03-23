@@ -154,6 +154,10 @@ body {
   cursor: pointer;
   color: #fff;
   background-color: #2178c5;
+  border-bottom: 1px solid #064c84;
+}
+.editing-site .site-list-wrap .site-list:last-child {
+  border-bottom: none;
 }
 .editing-site .site-list-wrap .site-list span {
   display: inline-block;
@@ -243,72 +247,69 @@ body {
 }
 /* accordion中的panel end */
 /* 常用栏目 样式 */
-.edit-column .panel-heading .panel-title {
+.editing-column .panel-heading .panel-title {
   padding-left: 0;
 }
-.edit-column {
+.editing-column {
   position: relative;
   border-bottom: 1px solid #2a6ea4!important;
   -webkit-box-shadow: 0 1px 1px #064679;
   -moz-box-shadow: 0 1px 1px #064679;
   box-shadow: 0 1px 1px #064679;
 }
-.edit-column .panel-heading {
+.editing-column .panel-heading {
   line-height: 40px;
   height: 40px;
   color: #fff;
   background-color: #374760;
   /*background:url(./editingCenter/app/images/l9.png) 33px center no-repeat;*/
 }
-.edit-column .panel-title {
+.editing-column .panel-title {
   font-size: 14px;
   line-height: 40px;
 }
-.edit-column span.edit-column-title {
+.editing-column span.editing-column-title {
   display: block;
   width: 100%;
   padding-left: 42px;
   background: #015293 url("editingCenter/images/blue-skin/editing-leftnav_icon04.png") no-repeat 18px center;
 }
-.edit-column .edit-column-mark {
+.editing-column .editing-column-mark {
   position: absolute;
   top: 14px;
   right: 14px;
   cursor: pointer;
 }
-.edit-column ul {
+.editing-column ul {
   height: auto!important;
   padding-top: 0;
   border-top: 1px solid #2a6ea4;
 }
-.edit-column ul li {
+.editing-column ul li {
   position: relative;
   height: 40px!important;
   line-height: 40px!important;
   padding-left: 44px;
-  background-color: #015293;
+  background-color: #1580a3;
   border-bottom: 1px solid #2a6ea4;
   -webkit-box-shadow: 0 1px 1px #064679;
   -moz-box-shadow: 0 1px 1px #064679;
   box-shadow: 0 1px 1px #064679;
   cursor: pointer;
 }
-.edit-column ul li:last-child {
+.editing-column ul li:last-child {
   border-bottom: none;
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
   box-shadow: none;
 }
-.edit-column ul li:hover {
-  background-color: rgba(1, 82, 147, 0.89);
-}
-.edit-column ul li:hover a {
+.editing-column ul li:hover a {
   text-decoration: none;
 }
-.edit-column ul li:active {
+.editing-column ul li:active {
   text-decoration: none;
 }
-.edit-column ul li a {
+.editing-column ul li a {
   display: inline-block !important;
   height: 40px!important;
   line-height: 40px!important;
@@ -316,7 +317,7 @@ body {
   text-align: left!important;
   color: #fff;
 }
-.edit-column .edit-remove-icon {
+.editing-column .editing-remove-icon {
   position: absolute;
   top: 0;
   right: 14px;
@@ -329,6 +330,7 @@ body {
 .editing-subscribe {
   position: relative;
   border-top: 1px solid #afc6dc;
+  border-bottom: 1px solid #4b85c1;
 }
 .editing-subscribe .editing-subscribe-list {
   height: 40px;
@@ -336,6 +338,7 @@ body {
   font-weight: 800;
   color: #fff;
   background-color: #3379c1;
+  border-bottom: 1px solid #2769ad;
   cursor: pointer;
 }
 .editing-subscribe .editing-subscribe-list .subscribe-icon {
@@ -365,13 +368,13 @@ body {
 }
 .subscribe-list-wrap .panel {
   line-height: 40px;
-  background-color: #3379c1;
+  background-color: #296eb5;
 }
 .subscribe-list-wrap .panel-heading {
   height: 40px;
   line-height: 40px;
   color: #fff;
-  background-color: #3379c1;
+  background-color: #296eb5;
 }
 .subscribe-list-wrap .panel-title {
   font-size: 14px;
@@ -379,7 +382,7 @@ body {
 }
 .subscribe-list-wrap span.subscribe-column-title {
   padding-left: 46px;
-  background: #3379c1 url("editingCenter/images/blue-skin/editing-leftnav_icon01.png") no-repeat 17px center;
+  background: #296eb5 url("editingCenter/images/blue-skin/editing-leftnav_icon01.png") no-repeat 17px center;
 }
 .subscribe-list-wrap .subscribe-column-mark {
   position: absolute;
@@ -389,7 +392,7 @@ body {
 }
 .subscribe-list-wrap ul {
   height: auto;
-  background-color: #3379c1;
+  background-color: #296eb5;
 }
 .subscribe-list-wrap ul li {
   position: relative;
@@ -895,6 +898,13 @@ table tbody tr td a:active {
 }
 /* 分页 page&pagination end */
 /* 网站待编右侧列表  end */
+/* 页脚footer */
+.editing-footer {
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+}
+/* 页脚footer end */
 /* media screen 2017.3.10 */
 /* @media (min-width: 992px) {
     

@@ -7,27 +7,16 @@ var app = angular.module('app', [
         'validation.rule',
         'LocalStorageModule',
         'angular.filter',
-        // 'treeControl',//2017/3/21-delete
-        // 'pasvaz.bindonce',//2017/3/21-delete
         'ngSweetAlert',
-        // 'cgBusy',//2017/3/21-delete
         'ngFlowGrid',
-        'appRouterModule',
-        'headModule',
-        'loginModule',
-        // 'manageConfig',//2017/3/21-delete
-        // 'myZoneModule',  //2017/3/21-delete
-        //  'planningCenterModule',//2017/3/21-delete
-        'editingCenterModule',
-        // 'resourceCenterModule', //2017/3/21-delete
-        // 'operateCenterModule',
-        // 'webIMModule',//2017/3/21-delete
-        // 'infinite-scroll',//2017/3/21-delete
-        'components.service',
-        'components.filter',
-        'components.directive',
+        'appRouterModule',          // 总路由
+        'headModule',               // 头部
+        'loginModule',              // 登录
+        'editingCenterModule',      // 采编中心
+        'components.service',       // 公共服务
+        'components.filter',        // 公共过滤操作
+        'components.directive',     // 公共指令
         'templates-main',
-        // 'duScroll',//2017/3/21-delete
     ]).config(['$validationProvider', function($validationProvider) {
         $validationProvider.setSuccessHTML(function(msg) {
             return "";

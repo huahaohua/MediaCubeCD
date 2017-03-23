@@ -23,17 +23,17 @@
         <tab heading="待编" class="pointer" active="status.waitcompiled.isSelected" ng-click="changeWebPlatform('waitcompiled')">
             <!-- 常用栏目 -->
             <accordion close-others="true">
-                <accordion-group class="edit-column" is-open="true">
+                <accordion-group class="editing-column" is-open="true">
                     <accordion-heading>
-                        <span class="edit-column-title">常用栏目</span>
-                        <img class="edit-column-mark" src="./editingCenter/images/blue-skin/editing-leftnav_icon02.png">
+                        <span class="editing-column-title">常用栏目</span>
+                        <img class="editing-column-mark" src="./editingCenter/images/blue-skin/editing-leftnav_icon02.png">
                     </accordion-heading>
                     <ul ng-if="status.favoriteChannels.length>0">
                         <li ng-repeat="fchannel in status.favoriteChannels track by $index" ng-init="innerIndex=$index;fchannel.status.hover=''" ng-mouseenter="fchannel.status.hover='hover'" ng-mouseleave="fchannel.status.hover=''" ng-click="setWebSelectedChnl(fchannel,'waitcompiled')">
                             <img src="./editingCenter/images/blue-skin/editing-leftnav_icon05.png">
                             <a ng-bind="fchannel.CHNLDESC"></a>
                             <!-- 删除常用栏目图标 -->
-                            <div class="edit-remove-icon" ng-click="removeFavoriteChannel(fchannel,innerIndex); $event.stopPropagation()" ng-show="fchannel.status.hover=='hover'">
+                            <div class="editing-remove-icon" ng-click="removeFavoriteChannel(fchannel,innerIndex); $event.stopPropagation()" ng-show="fchannel.status.hover=='hover'">
                                 <img src="./editingCenter/images/blue-skin/editing-leftnav_icon06.png">
                             </div>
                         </li>
