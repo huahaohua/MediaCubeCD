@@ -17,6 +17,7 @@ var app = angular.module('app', [
         'components.filter',        // 公共过滤操作
         'components.directive',     // 公共指令
         'templates-main',
+        'duScroll',//滚动指令插件
     ]).config(['$validationProvider', function($validationProvider) {
         $validationProvider.setSuccessHTML(function(msg) {
             return "";

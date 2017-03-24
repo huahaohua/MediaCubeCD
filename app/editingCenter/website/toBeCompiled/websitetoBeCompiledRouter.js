@@ -12,5 +12,13 @@ angular.module('websitetoBeCompiledRouterModule', [])
                     controller: "websitetoBeCompiledCtrl"
                 }
             }
+        }).state('websiteword', {
+            url: "/websiteword?channelid&chnldocid&metadataid&siteid&status",
+            views: {
+                '': {
+                    templateUrl: './editingCenter/website/toBeCompiled/word/toBeCompiled_word_tpl.html',
+                    controller: "editingCenterWebsiteWordCtrl"
+                }
+            }
         });
     }]);

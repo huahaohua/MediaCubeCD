@@ -3,13 +3,13 @@
     <div class="col-md-8">
         <!-- 新建按钮 -->
         <div class="btn-group" role="group">
-            <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" ng-disabled=" data.selectedArray.length==0">
+            <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
                 <i class="btn-icon btn-new"></i>
                 <span>新建</span>
                 <i class="btn-drop-icon"></i>
             </button>
             <ul class="dropdown-menu editing-dropdown-menu">
-                <li><a href="javascript:void(0)">文字</a></li>
+                <li><a ui-sref="websiteword({channelid:1,siteid:1,status:0})" target="_blank">文字</a></li>
                 <li><a href="javascript:void(0)">图集</a></li>
                 <li><a href="javascript:void(0)">视频</a></li>
                 <li><a href="javascript:void(0)">链接</a></li>
